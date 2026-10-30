@@ -9,9 +9,9 @@ and Geist).
 
 1. **Our properties.** Name, city and street address for McHenry Village, Northgate Plaza
    and Lakeside Shopping Center.
-2. **Tenants and prospects.** Form with Property, Tenant name, Best email or phone, and
+2. **Tenants & Leasing Requests.** Form with Property, Tenant name, Best email or phone, and
    Request / description. Sent as Netlify Form `leasing-contact`.
-3. **Vendors and contractors.** Form with Property, Vendor / company name, Best email or
+3. **Vendors Requests.** Form with Property, Vendor / company name, Best email or
    phone, and Request / description. Sent as Netlify Form `vendor-contact`.
 
 Both forms are meant to route to **CommercialOps@standardmanagement.com**.
