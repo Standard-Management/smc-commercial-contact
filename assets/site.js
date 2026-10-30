@@ -1,6 +1,7 @@
 /* SMC Commercial Properties: contact forms.
    Progressive enhancement: without JavaScript the forms still post to Netlify Forms.
-   With JavaScript, submissions are sent in the background and the visitor is taken to the thank-you page. */
+   With JavaScript, submissions are sent in the background and the visitor is taken to the thank-you page.
+   If sending fails, a status message with the fallback email address is shown. */
 (function () {
   'use strict';
 
