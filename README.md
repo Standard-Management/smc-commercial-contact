@@ -26,6 +26,7 @@ Both forms are meant to route to **CommercialOps@standardmanagement.com**.
 | `assets/site.css` | Brand styles |
 | `assets/site.js` | Sends the forms in the background, builds the email subject, and shows a status message |
 | `assets/favicon.svg` | Favicon, the same mark the commercial site generates |
+| `thank-you.html` | Branded page visitors see after a form is submitted |
 | `netlify.toml` | Netlify settings: no build step, publish the root, security headers |
 
 ## Before this site goes live
@@ -35,7 +36,8 @@ Form handling was approved and enabled on Oct 30, 2026. The items below still ne
 - **Form handling (approved).** Netlify Forms stores tenant and vendor submissions on
   Netlify. Ted approved this on Oct 30, 2026. Email notifications to CommercialOps@ are set
   under the project's Forms settings. If form detection is switched off, visitors see the
-  email fallback message instead.
+  email fallback message instead. After a successful submission, visitors land on the
+  branded `thank-you.html` page.
 - **Addresses (confirm each).**
   - McHenry Village: `1700 McHenry Avenue, Modesto, CA 95350`. The live commercial site
     still shows the intersection, McHenry Ave & Roseburg Ave.
