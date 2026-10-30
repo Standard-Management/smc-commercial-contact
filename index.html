@@ -75,8 +75,17 @@
           <p class="form-lede">Interested in leasing space, or already a tenant with a request? Contact our leasing team.</p>
           <form name="leasing-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-success="Thanks. Your request is in, and our leasing team will follow up within one business day." data-fallback="CommercialOps@standardmanagement.com">
             <input type="hidden" name="form-name" value="leasing-contact">
+            <input type="hidden" name="subject" value="Tenant or Leasing Request">
             <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <div class="fields">
+              <div class="field">
+                <label for="l-type">I am a *</label>
+                <select class="select" id="l-type" name="requester-type" required>
+                  <option value="">Select one</option>
+                  <option value="Tenant Request">A current tenant</option>
+                  <option value="Leasing Inquiry">Interested in leasing space</option>
+                </select>
+              </div>
               <div class="field">
                 <label for="l-prop">Property *</label>
                 <select class="select" id="l-prop" name="property" required>
@@ -113,6 +122,7 @@
           <p class="form-lede">Need to reach our property management team about a vendor matter? Tell us the property and what you need.</p>
           <form name="vendor-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-success="Thanks. Your request is in, and our property management team will follow up within one business day." data-fallback="CommercialOps@standardmanagement.com">
             <input type="hidden" name="form-name" value="vendor-contact">
+            <input type="hidden" name="subject" value="Vendor Request" data-base="Vendor Request">
             <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <div class="fields">
               <div class="field">

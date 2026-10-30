@@ -15,6 +15,18 @@
 
       var status = form.querySelector('.form-status');
       var button = form.querySelector('button[type="submit"]');
+      /* Build the email subject from the form: leasing uses the "I am a" choice, vendor uses its base label. */
+      var subjectField = form.querySelector('input[name="subject"]');
+      var typeField = form.querySelector('select[name="requester-type"]');
+      var propertyField = form.querySelector('select[name="property"]');
+      if (subjectField) {
+        var base = typeField ? typeField.value : subjectField.getAttribute('data-base');
+        if (base) {
+          var prop = propertyField ? propertyField.value : '';
+          subjectField.value = prop ? base + ' – ' + prop : base;
+        }
+      }
+
       var body = new URLSearchParams(new FormData(form)).toString();
 
       button.disabled = true;

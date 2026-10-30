@@ -9,10 +9,12 @@ and Geist).
 
 1. **Our properties.** Name, city and street address for McHenry Village, Northgate Plaza
    and Lakeside Shopping Center.
-2. **Tenants & Leasing Requests.** Form with Property, Tenant name, Best email or phone, and
-   Request / description. Sent as Netlify Form `leasing-contact`.
+2. **Tenants & Leasing Requests.** Form with an "I am a" choice (current tenant or leasing inquiry),
+   Property, Tenant name, Best email or phone, and Request / description. Sent as Netlify Form
+   `leasing-contact`. The email subject is "Tenant Request – [property]" or "Leasing Inquiry – [property]".
 3. **Vendors Requests.** Form with Property, Vendor / company name, Best email or
-   phone, and Request / description. Sent as Netlify Form `vendor-contact`.
+   phone, and Request / description. Sent as Netlify Form `vendor-contact`. The email subject
+   is "Vendor Request – [property]".
 
 Both forms are meant to route to **CommercialOps@standardmanagement.com**.
 
@@ -22,7 +24,7 @@ Both forms are meant to route to **CommercialOps@standardmanagement.com**.
 |---|---|
 | `index.html` | The whole page (properties, both forms, footer) |
 | `assets/site.css` | Brand styles |
-| `assets/site.js` | Sends the forms in the background and shows a status message |
+| `assets/site.js` | Sends the forms in the background, builds the email subject, and shows a status message |
 | `assets/favicon.svg` | Favicon, the same mark the commercial site generates |
 | `netlify.toml` | Netlify settings: no build step, publish the root, security headers |
 
