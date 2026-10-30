@@ -1,5 +1,6 @@
 # SMC Commercial Contact: Netlify build settings.
 # Static site, no build step. Publish the repository root.
+# Assets revalidate on each load (no-cache), so a fresh deploy shows at once.
 [build]
   publish = "."
 
@@ -14,4 +15,4 @@
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "no-cache"
