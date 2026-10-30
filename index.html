@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | SMC Commercial Properties</title>
+<meta name="description" content="Contact SMC Commercial Properties: our center addresses, leasing requests for tenants and prospects, and property management requests for vendors.">
+<meta name="theme-color" content="#051D35">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="./" aria-label="SMC Commercial Properties home">
+      <span class="wm-main">SMC</span><span class="wm-rule" aria-hidden="true"></span><span class="wm-sub">Commercial<br>Properties</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Contact us</p>
+      <h1 class="display-lg">How can we <em>help?</em></h1>
+      <p class="lede">Reach the right team for leasing, tenant requests, or vendor work at our three centers.</p>
+    </div>
+  </section>
+
+  <section class="section" id="properties" aria-labelledby="props-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Our properties</p>
+        <h2 id="props-h" class="display-md">Three centers in California and Nevada</h2>
+      </div>
+      <div class="prop-grid">
+        <article class="prop-card">
+          <h3>McHenry Village</h3>
+          <p class="prop-loc">Modesto, CA</p>
+          <address>1700 McHenry Avenue<br>Modesto, CA 95350</address>
+        </article>
+        <article class="prop-card">
+          <h3>Northgate Plaza</h3>
+          <p class="prop-loc">Carson City, NV</p>
+          <address>2523–2749 N. Carson Street<br>Carson City, NV 89706</address>
+        </article>
+        <article class="prop-card">
+          <h3>Lakeside Shopping Center</h3>
+          <p class="prop-loc">Burbank, CA</p>
+          <address>257–353 N. Pass Avenue<br>Burbank, CA 91505</address>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-cream" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Send us a message</p>
+        <h2 id="contact-h" class="display-md">Choose the team that fits</h2>
+      </div>
+
+      <div class="form-grid-2">
+
+        <!-- Tenants and prospects -->
+        <div class="form-panel" id="leasing">
+          <h3>Tenants &amp; prospects</h3>
+          <p class="form-lede">Interested in leasing space, or already a tenant with a request? Contact our leasing team.</p>
+          <form name="leasing-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-success="Thanks. Your request is in, and our leasing team will follow up within one business day." data-fallback="CommercialOps@standardmanagement.com">
+            <input type="hidden" name="form-name" value="leasing-contact">
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="fields">
+              <div class="field">
+                <label for="l-prop">Property *</label>
+                <select class="select" id="l-prop" name="property" required>
+                  <option value="">Select a property</option>
+                  <option>McHenry Village</option>
+                  <option>Northgate Plaza</option>
+                  <option>Lakeside Shopping Center</option>
+                  <option>More than one, or not sure</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="l-tenant">Tenant name *</label>
+                <input class="input" id="l-tenant" name="tenant" autocomplete="organization" required>
+              </div>
+              <div class="field">
+                <label for="l-contact">Best email or phone *</label>
+                <input class="input" id="l-contact" name="contact" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="l-request">Request / description *</label>
+                <textarea class="input" id="l-request" name="request" rows="6" required></textarea>
+              </div>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn-navy" type="submit">Send to leasing</button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- Vendors -->
+        <div class="form-panel" id="vendors">
+          <h3>Vendors &amp; contractors</h3>
+          <p class="form-lede">Need to reach our property management team about a vendor matter? Tell us the property and what you need.</p>
+          <form name="vendor-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-success="Thanks. Your request is in, and our property management team will follow up within one business day." data-fallback="CommercialOps@standardmanagement.com">
+            <input type="hidden" name="form-name" value="vendor-contact">
+            <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="fields">
+              <div class="field">
+                <label for="v-prop">Property *</label>
+                <select class="select" id="v-prop" name="property" required>
+                  <option value="">Select a property</option>
+                  <option>McHenry Village</option>
+                  <option>Northgate Plaza</option>
+                  <option>Lakeside Shopping Center</option>
+                  <option>More than one, or not sure</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="v-vendor">Vendor / company name *</label>
+                <input class="input" id="v-vendor" name="vendor" autocomplete="organization" required>
+              </div>
+              <div class="field">
+                <label for="v-contact">Best email or phone *</label>
+                <input class="input" id="v-contact" name="contact" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="v-request">Request / description *</label>
+                <textarea class="input" id="v-request" name="request" rows="6" required></textarea>
+              </div>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn-navy" type="submit">Send to property management</button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <p class="fine">Both forms go to our Commercial Operations team. Please don’t include account numbers, Social Security numbers, or other sensitive personal details.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div>
+      <a class="wordmark" href="./" aria-label="SMC Commercial Properties home">
+        <span class="wm-main">SMC</span><span class="wm-rule" aria-hidden="true"></span><span class="wm-sub">Commercial<br>Properties</span>
+      </a>
+      <p>Grocery-anchored neighborhood centers in California and Nevada, owned and managed by Standard Management Company, in real estate since 1961.</p>
+    </div>
+    <div>
+      <h2>Commercial Operations</h2>
+      <p><a href="mailto:CommercialOps@standardmanagement.com">CommercialOps@standardmanagement.com</a></p>
+      <p>Standard Management Company<br>2245 Campus Drive<br>El Segundo, CA 90245</p>
+      <p><a href="tel:+13104102300">(310) 410-2300</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Standard Management Company. All rights reserved.</span>
+    <ul>
+      <li><a href="https://www.standardmanagement.com/privacy-policy/" rel="noopener">Privacy Policy</a></li>
+      <li><a href="mailto:webmaster@standardmanagement.com">Accessibility: webmaster@standardmanagement.com</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
