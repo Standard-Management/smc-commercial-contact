@@ -88,6 +88,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .btn:disabled { opacity: .6; cursor: wait; transform: none; }
 .btn-navy { background: var(--navy); color: #fff; }
 .btn-navy:hover { background: var(--navy-3); color: #fff; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: var(--gold-lt); color: var(--navy); }
+.btn-sm { min-height: 40px; padding: 0 18px; font-size: 12px; }
+.header-cta { margin-left: auto; }
 
 /* ---------- Header ---------- */
 .site-header { background: var(--navy); border-bottom: 1px solid var(--line-dk); }
@@ -140,6 +144,8 @@ textarea.input { height: auto; min-height: 140px; padding: 14px; resize: vertica
 .site-footer a { color: rgba(255,255,255,.85); text-decoration: none; }
 .site-footer a:hover { color: var(--gold-lt); }
 .site-footer p { margin-bottom: .6em; }
+.tagline { font-family: var(--f-display); font-size: 1.2rem; color: #fff; margin-bottom: 1em; }
+.tagline em { font-style: italic; }
 .footer-bottom { border-top: 1px solid var(--line-dk); padding: 22px 0 28px; display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; font-size: 13px; color: rgba(255,255,255,.5); }
 .footer-bottom ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 0; padding: 0; }
 .footer-bottom a { color: rgba(255,255,255,.6); }

@@ -23,16 +23,17 @@ Both forms are meant to route to **CommercialOps@standardmanagement.com**.
 | `index.html` | The whole page (properties, both forms, footer) |
 | `assets/site.css` | Brand styles |
 | `assets/site.js` | Sends the forms in the background and shows a status message |
+| `assets/favicon.svg` | Favicon, the same mark the commercial site generates |
 | `netlify.toml` | Netlify settings: no build step, publish the root, security headers |
 
 ## Before this site goes live
 
-These items need sign-off or confirmation. Nothing here has been enabled yet.
+Form handling was approved and enabled on Oct 30, 2026. The items below still need confirmation.
 
-- **Form handling (needs approval).** Netlify Forms stores every submission on Netlify,
-  and tenant and vendor requests contain personal information. Turn on **Forms → Enable
-  form detection** and **Forms → Form notifications** (email to CommercialOps@) only after
-  the data-handling sign-off is given. Until then the forms will not deliver.
+- **Form handling (approved).** Netlify Forms stores tenant and vendor submissions on
+  Netlify. Ted approved this on Oct 30, 2026. Email notifications to CommercialOps@ are set
+  under the project's Forms settings. If form detection is switched off, visitors see the
+  email fallback message instead.
 - **Addresses (confirm each).**
   - McHenry Village: `1700 McHenry Avenue, Modesto, CA 95350`. The live commercial site
     still shows the intersection, McHenry Ave & Roseburg Ave.
@@ -46,7 +47,10 @@ These items need sign-off or confirmation. Nothing here has been enabled yet.
 - **Accessibility contact.** Set to webmaster@standardmanagement.com, as on the commercial
   site.
 - **Fonts.** Playfair Display and Geist load from Google Fonts. The commercial site
-  self-hosts its fonts, so switch to self-hosting if SAMI wants no third-party requests.
+  self-hosts its font files from the `@fontsource-variable` packages. Matching that means
+  adding the woff2 files to `assets/fonts/`, which needs a binary upload to the repo.
+- **Logo.** The wordmark is text (SMC | Commercial Properties), as on the commercial site.
+  The commercial site has no logo image file, so there is nothing to copy over.
 
 ## Local preview
 
