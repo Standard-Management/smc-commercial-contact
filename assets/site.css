@@ -1,3 +1,9 @@
+/* Self-hosted fonts. The build copies these files into assets/fonts/ (see scripts/copy-fonts.js).
+   Same declarations as the commercial site. */
+@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/geist-latin-wght-normal.woff2) format('woff2-variations'),url(/assets/fonts/geist-latin-wght-normal.woff2) format('woff2');}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 900;font-display:swap;src:url(/assets/fonts/playfair-display-latin-wght-normal.woff2) format('woff2-variations'),url(/assets/fonts/playfair-display-latin-wght-normal.woff2) format('woff2');}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 900;font-display:swap;src:url(/assets/fonts/playfair-display-latin-wght-italic.woff2) format('woff2-variations'),url(/assets/fonts/playfair-display-latin-wght-italic.woff2) format('woff2');}
+
 /* SMC Commercial Properties: contact one-pager.
    SAMI brand system: navy #051D35, gold #E69F49, body text #333333.
    Display: Playfair Display. Body: Geist. */

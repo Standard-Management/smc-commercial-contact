@@ -1,0 +1,16 @@
+{
+  "name": "smc-commercial-contact",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contact one-pager for SMC Commercial Properties. The build copies the self-hosted fonts into assets/fonts/.",
+  "scripts": {
+    "fonts": "node scripts/copy-fonts.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@fontsource-variable/playfair-display": "5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

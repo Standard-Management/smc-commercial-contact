@@ -1,8 +1,12 @@
 # SMC Commercial Contact: Netlify build settings.
-# Static site, no build step. Publish the repository root.
-# Assets revalidate on each load (no-cache), so a fresh deploy shows at once.
+# The build installs the font packages (package.json) and copies the font files into assets/fonts/.
+# Publish the repository root. Assets revalidate on each load (no-cache), so a fresh deploy shows at once.
 [build]
+  command = "npm install --no-audit --no-fund && npm run fonts"
   publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
