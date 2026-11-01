@@ -44,10 +44,11 @@ Form handling was approved and enabled on Oct 30, 2026. Ted made the decisions b
   Netlify. Ted approved this on Oct 30, 2026. Email notifications to CommercialOps@ are set
   under the project's Forms settings. If form detection is switched off, visitors see the
   email fallback message instead. After a successful submission, visitors land on the
-  branded `thank-you.html` page.
+  branded `thank-you.html` page. The forms have no `action` attribute, because Netlify
+  dropped the Netlify form markup when one was present. The submit script does the redirect.
 - **Addresses.**
-  - McHenry Village: `1700 McHenry Avenue, Modesto, CA 95350`. Still to confirm. The live
-    commercial site shows the intersection, McHenry Ave & Roseburg Ave.
+  - McHenry Village: `1700 McHenry Avenue, Modesto, CA 95350`. Confirmed by Ted on Oct 31, 2026. The live
+    commercial site still shows the intersection, McHenry Ave & Roseburg Ave.
   - Northgate Plaza: `2523–2749 N. Carson Street, Carson City, NV 89706`. Still to confirm the
     street range.
   - Lakeside Shopping Center: `257–353 N. Pass Avenue, Burbank, CA 91505`. Confirmed by Ted.
