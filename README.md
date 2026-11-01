@@ -44,9 +44,10 @@ Form handling was approved and enabled on Oct 30, 2026. Ted made the decisions b
   Netlify. Ted approved this on Oct 30, 2026. Email notifications to CommercialOps@ are set
   under the project's Forms settings. If form detection is switched off, visitors see the
   email fallback message instead. After a successful submission, visitors land on the
-  branded `thank-you.html` page. Netlify removes `data-netlify` and `netlify-honeypot` from the
-  served HTML, so the submit script finds forms by `data-fallback` instead. The Netlify honeypot
-  spam check is not active until that is fixed.
+  branded `thank-you.html` page, with or without JavaScript. Netlify removes `data-netlify` and
+  `netlify-honeypot` from the served HTML, so the submit script finds forms by `data-fallback`.
+  The Netlify Forms page reports honeypot spam prevention as enabled, but the attribute is missing
+  from the served HTML, so this needs confirming.
 - **Addresses.**
   - McHenry Village: `1700 McHenry Avenue, Modesto, CA 95350`. Confirmed by Ted on Oct 31, 2026. The live
     commercial site still shows the intersection, McHenry Ave & Roseburg Ave.
